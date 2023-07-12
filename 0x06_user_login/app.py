@@ -15,7 +15,7 @@ users = [{
     'password': '123456'
 }]
 
-app = Flask('watermark')
+app = Flask(__name__)
 app.secret_key = 'LearnFlaskTheHardWay2017'
 
 upload_dir = os.path.join(app.instance_path, 'upload')
